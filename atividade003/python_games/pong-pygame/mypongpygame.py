@@ -14,7 +14,7 @@ pygame.init()
 COLOR_BLACK = (0, 0, 0)
 COLOR_WHITE = (255, 255, 255)
 
-SCORE_MAX = 6
+SCORE_MAX = 2
 
 size = (1280, 720)
 screen = pygame.display.set_mode(size)
