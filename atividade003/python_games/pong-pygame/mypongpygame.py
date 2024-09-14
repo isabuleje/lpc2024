@@ -45,7 +45,7 @@ player_1_move_down = False
 # player 2 - robot
 player_2 = pygame.image.load("assets/player.png")
 player_2_y = 300
-random_number = 2
+random_number = 1
 player_2_direction = 1
 
 # ball
@@ -158,14 +158,14 @@ while game_loop:
 
         # player 2 "Artificial Intelligence"
         if random_number == 1:
-            if player_2_y < ball_y - 40 :  
-                player_2_y += 6  
-            if player_2_y > ball_y + 40 : 
-                player_2_y -= 6 
+            if player_2_y < ball_y - 30 :  
+                player_2_y += 7
+            if player_2_y > ball_y + 30 : 
+                player_2_y -= 7
             
             
         if random_number == 2:
-            player_2_y += 5 * player_2_direction
+            player_2_y += 6 * player_2_direction
 
             if player_2_y <= 0:  
                 player_2_direction = 1 
